@@ -14,6 +14,7 @@
 		F4930DAF278BAE72008CC51C /* PokeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4930DAE278BAE72008CC51C /* PokeAppTests.swift */; };
 		F4930DB9278BAE72008CC51C /* PokeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4930DB8278BAE72008CC51C /* PokeAppUITests.swift */; };
 		F4930DBB278BAE72008CC51C /* PokeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4930DBA278BAE72008CC51C /* PokeAppUITestsLaunchTests.swift */; };
+		F4F2275C27BC636B00D85569 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F2275B27BC636B00D85569 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		F4930DB4278BAE72008CC51C /* PokeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4930DB8278BAE72008CC51C /* PokeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeAppUITests.swift; sourceTree = "<group>"; };
 		F4930DBA278BAE72008CC51C /* PokeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F4F2275B27BC636B00D85569 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +96,7 @@
 		F4930D9C278BAE6E008CC51C /* PokeApp */ = {
 			isa = PBXGroup;
 			children = (
-				F4930DC9278BAF92008CC51C /* Controllers */,
+				F4930DC9278BAF92008CC51C /* Views */,
 				F4930DC8278BAF86008CC51C /* ViewModels */,
 				F4930DC7278BAF43008CC51C /* Models */,
 				F4930D9D278BAE6E008CC51C /* PokeAppApp.swift */,
@@ -144,11 +146,12 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		F4930DC9278BAF92008CC51C /* Controllers */ = {
+		F4930DC9278BAF92008CC51C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F4F2275B27BC636B00D85569 /* HomeView.swift */,
 			);
-			path = Controllers;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4F2275C27BC636B00D85569 /* HomeView.swift in Sources */,
 				F4930DA0278BAE6E008CC51C /* ContentView.swift in Sources */,
 				F4930D9E278BAE6E008CC51C /* PokeAppApp.swift in Sources */,
 			);
