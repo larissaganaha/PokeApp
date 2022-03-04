@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F47D382B27D26B5100A05906 /* PokemonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47D382A27D26B5100A05906 /* PokemonService.swift */; };
+		F47D382D27D2733B00A05906 /* PokemonAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47D382C27D2733B00A05906 /* PokemonAPI.swift */; };
+		F47D382F27D2764B00A05906 /* TypeMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47D382E27D2764B00A05906 /* TypeMapper.swift */; };
 		F4930D9E278BAE6E008CC51C /* PokeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4930D9D278BAE6E008CC51C /* PokeAppApp.swift */; };
 		F4930DA0278BAE6E008CC51C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4930D9F278BAE6E008CC51C /* ContentView.swift */; };
 		F4930DA2278BAE72008CC51C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4930DA1278BAE72008CC51C /* Assets.xcassets */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F47D382A27D26B5100A05906 /* PokemonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonService.swift; sourceTree = "<group>"; };
+		F47D382C27D2733B00A05906 /* PokemonAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonAPI.swift; sourceTree = "<group>"; };
+		F47D382E27D2764B00A05906 /* TypeMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeMapper.swift; sourceTree = "<group>"; };
 		F4930D9A278BAE6E008CC51C /* PokeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4930D9D278BAE6E008CC51C /* PokeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeAppApp.swift; sourceTree = "<group>"; };
 		F4930D9F278BAE6E008CC51C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +79,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F47D382927D26B3700A05906 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F47D382A27D26B5100A05906 /* PokemonService.swift */,
+				F47D382E27D2764B00A05906 /* TypeMapper.swift */,
+				F47D382C27D2733B00A05906 /* PokemonAPI.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		F4930D91278BAE6E008CC51C = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +112,7 @@
 		F4930D9C278BAE6E008CC51C /* PokeApp */ = {
 			isa = PBXGroup;
 			children = (
+				F47D382927D26B3700A05906 /* Service */,
 				F4930DC9278BAF92008CC51C /* Views */,
 				F4930DC8278BAF86008CC51C /* ViewModels */,
 				F4930DC7278BAF43008CC51C /* Models */,
@@ -285,7 +302,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4F2275C27BC636B00D85569 /* HomeView.swift in Sources */,
+				F47D382B27D26B5100A05906 /* PokemonService.swift in Sources */,
 				F4930DA0278BAE6E008CC51C /* ContentView.swift in Sources */,
+				F47D382D27D2733B00A05906 /* PokemonAPI.swift in Sources */,
+				F47D382F27D2764B00A05906 /* TypeMapper.swift in Sources */,
 				F4930D9E278BAE6E008CC51C /* PokeAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
