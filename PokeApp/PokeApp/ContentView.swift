@@ -7,10 +7,27 @@
 
 import SwiftUI
 
+struct TypeModel: Identifiable {
+    var id: Int
+
+    let name: String
+    let url: String
+}
 struct ContentView: View {
+    let types: [TypeModel] = [
+        .init(id: 0, name: "Grass", url: "grass"),
+        .init(id: 1, name: "Fairy", url: "fairy"),
+        .init(id: 2, name: "Water", url: "water")
+    ]
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List(types) { type in
+                HStack(spacing: 10.0) {
+                    Text(type.name)
+                }
+            }.navigationTitle(Text("PokéApp"))
+        }
     }
 }
 
