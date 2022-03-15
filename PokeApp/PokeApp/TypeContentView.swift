@@ -16,7 +16,8 @@ struct TypeContentView: View {
                 ForEach(viewModel.types, id: \.id) { type in
                     TypeRow(type: type)
                 }
-            }.navigationTitle(Text("PokéApp"))
+            }
+            .navigationTitle(Text("PokéApp"))
             .onAppear { viewModel.fetch() }
         }
     }

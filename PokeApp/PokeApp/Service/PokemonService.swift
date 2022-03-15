@@ -58,6 +58,6 @@ extension PokemonService: PokemonServiceProtocol {
 
 private extension Array where Element == TypeResponse {
     func toModels() -> [PokemonType] {
-        map { PokemonType(name: $0.name, url: $0.url) }
+        map { PokemonType(name: $0.name.capitalized, url: $0.url) }
     }
 }
