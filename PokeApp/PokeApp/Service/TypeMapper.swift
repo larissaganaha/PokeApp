@@ -7,20 +7,15 @@
 
 import Foundation
 
-struct TypeResponse: Codable {
+struct TypeResponse: Decodable {
     let name: String
     let url: String
-
-    enum CodingKeys: String, CodingKey {
-        case name
-        case url
-    }
 }
 
 struct TypeMapper {
-
-    private struct Types: Decodable {
-        let items: [TypeResponse]
+    struct Types: Decodable {
+        let count: Int
+        let results: [TypeResponse]
     }
 
     static func map(_ data: Data, from response: HTTPURLResponse) throws -> [TypeResponse] {
@@ -29,6 +24,6 @@ struct TypeMapper {
                   throw PokemonService.Error.invalidData
               }
 
-        return decoded.items
+        return decoded.results
     }
 }

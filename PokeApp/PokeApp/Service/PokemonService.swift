@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct PokemonType {
+struct PokemonType: Identifiable {
+    var id = UUID()
+
     let name: String
     let url: String
 }

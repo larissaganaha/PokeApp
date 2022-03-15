@@ -7,37 +7,27 @@
 
 import SwiftUI
 
-struct TypeModel: Identifiable {
-    var id: Int
-
-    let name: String
-    let url: String
-    let imageName: String
-}
-struct ContentView: View {
-    let types: [TypeModel] = [
-        .init(id: 0, name: "Grass", url: "grass", imageName: "circle.dashed"),
-        .init(id: 1, name: "Fairy", url: "fairy", imageName: "circle.dashed"),
-        .init(id: 2, name: "Water", url: "water", imageName: "circle.dashed")
-    ]
+struct TypeContentView: View {
+    @StateObject var viewModel = TypeViewModel()
 
     var body: some View {
         NavigationView {
             List {
-                ForEach(types) { type in
+                ForEach(viewModel.types, id: \.id) { type in
                     TypeRow(type: type)
                 }
             }.navigationTitle(Text("PokéApp"))
+            .onAppear { viewModel.fetch() }
         }
     }
 }
 
 struct TypeRow: View {
-    let type: TypeModel
+    let type: PokemonType
 
     var body: some View {
         HStack(spacing: 10.0) {
-            Image(systemName: type.imageName)
+            Image(systemName: "circle.dashed")
                 .renderingMode(.original)
                 .resizable()
                 .clipShape(Circle())
@@ -50,6 +40,6 @@ struct TypeRow: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        TypeContentView()
     }
 }
