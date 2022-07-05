@@ -119,7 +119,6 @@
 				F4930DC8278BAF86008CC51C /* ViewModels */,
 				F4930DC7278BAF43008CC51C /* Models */,
 				F4930D9D278BAE6E008CC51C /* PokeAppApp.swift */,
-				F4930D9F278BAE6E008CC51C /* TypeContentView.swift */,
 				F4930DA1278BAE72008CC51C /* Assets.xcassets */,
 				F4930DA3278BAE72008CC51C /* Preview Content */,
 			);
@@ -170,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				F4F2275B27BC636B00D85569 /* HomeView.swift */,
+				F4930D9F278BAE6E008CC51C /* TypeContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
